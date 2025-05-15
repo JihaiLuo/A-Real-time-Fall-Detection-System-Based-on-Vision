@@ -2,7 +2,7 @@
 
 This project implements a real-time fall detection system using pose estimation (MediaPipe) and a Convolutional Neural Network (CNN).
 
-Dataset: https://fenix.ur.edu.pl/~mkepski/ds/uf.html (RGB data)
+Dataset: https://fenix.ur.edu.pl/~mkepski/ds/uf.html (RGB data Camera 0)
 
 ---
 
