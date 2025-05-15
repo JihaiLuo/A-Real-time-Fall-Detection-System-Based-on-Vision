@@ -39,12 +39,17 @@ Create a virtual environment and install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-
 ---
 
 ## How to Run
 
-### 1. Extract Pose Data
+### Run with Pretrained Model (No Retraining Needed)
+
+Our trained model is saved as `fall_cnn_model.pth`. If you do not need to retrain the model, simply run `realtime_detection.py` after installing the dependencies. This will activate your computer’s camera to capture real-time video, and a window will pop up displaying our real-time fall detection interface.
+
+### Run with Model Retraining
+
+#### 1. Extract Pose Data
 
 ```bash
 python extract_pose_from_frames.py
@@ -54,7 +59,7 @@ Converts video frames to pose sequences saved in `.npy` format under `pose_data/
 
 ---
 
-### 2. Train CNN Model
+#### 2. Train CNN Model
 
 ```bash
 python train_model.py
@@ -64,7 +69,7 @@ Trains a classifier and saves the model to `fall_cnn_model.pth`.
 
 ---
 
-### 3. Evaluate Model
+#### 3. Evaluate Model
 
 ```bash
 python classification_report_eval.py
@@ -74,7 +79,7 @@ Prints precision, recall, F1-score, and confusion matrix.
 
 ---
 
-### 4. Real-Time Fall Detection
+#### 4. Real-Time Fall Detection
 
 ```bash
 python realtime_detection.py
