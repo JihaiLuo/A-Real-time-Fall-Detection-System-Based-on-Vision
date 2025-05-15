@@ -10,8 +10,6 @@ Dataset: https://fenix.ur.edu.pl/~mkepski/ds/uf.html (RGB data)
 
 ```
 .
-├── URFD_frames/                   # Raw dataset: frame-by-frame images from UR Fall Detection dataset
-├── pose_data/                     # Processed pose data (output from MediaPipe)
 ├── cnn_model.py                   # CNN model definition
 ├── extract_pose_from_frames.py    # Script to extract pose sequences from URFD frames
 ├── train_model.py                 # Script to train the CNN model
